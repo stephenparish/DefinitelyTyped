@@ -301,9 +301,8 @@ declare var __webpack_require__: any;
  * The internal chunk loading function
  *
  * @param chunkId The id for the chunk to load.
- * @param callback A callback function called once the chunk is loaded.
  */
-declare var __webpack_chunk_load__: (chunkId: any, callback: (require: __WebpackModuleApi.RequireLambda) => void) => void;
+declare var __webpack_chunk_load__: (chunkId: string) => Promise<void>;
 
 /**
  * Access to the internal object of all modules.
